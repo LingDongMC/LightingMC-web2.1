@@ -6,19 +6,19 @@ with open('db.sql') as f:
     conn.executescript(f.read())
 
 cur = conn.cursor()
-
 cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, ?)",
-            ('以开放包容的姿态大步迈向新时代', '学习新思想', '111', 'NewEra')
-            )
-cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, ?)",
-            ('原版与插件的深度融合使游戏内容更丰富', '加入我们 助力开发', '222', 'Plugins')
+            ('管理团队与玩家共度艰难岁月，忆苦思甜', '了解我们', '444', 'HardTime')
             )
 cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, ?)",
             ('丰富的活动与浓厚的节日氛围', '加入服务器 参与活动', '333', 'Parties')
             )
 cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, ?)",
-            ('管理团队与玩家共度艰难岁月，忆苦思甜', '了解我们', '444', 'HardTime')
+            ('原版与插件的深度融合使游戏内容更丰富', '加入我们 助力开发', '222', 'Plugins')
             )
+cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, ?)",
+            ('以开放包容的姿态大步迈向新时代', '学习新思想', '111', 'NewEra')
+            )
+
 
 
 cur.execute("INSERT INTO introduce (title, content, link) VALUES (?, ?, ?)",
