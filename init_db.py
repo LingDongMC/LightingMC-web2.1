@@ -21,17 +21,17 @@ cur.execute("INSERT INTO slogan (title, button, content, link) VALUES (?, ?, ?, 
 
 
 
-cur.execute("INSERT INTO introduce (title, content, link) VALUES (?, ?, ?)",
-            ('小熊酒吧度假村 远离城市的喧嚣 尽享海岛美景', '内容111', 'BearBar')
+cur.execute("INSERT INTO introduce (title, button, content, link) VALUES (?, ?, ?, ?)",
+            ('小熊酒吧度假村 远离城市的喧嚣 尽享海岛美景', '', '内容111', 'BearBar')
             )
-cur.execute("INSERT INTO introduce (title, content, link) VALUES (?, ?, ?)",
-            ('即将上线：物料仓库 随时随地存取数据库中的物品', '内容222', 'LockoctThings')
+cur.execute("INSERT INTO introduce (title, button, content, link) VALUES (?, ?, ?, ?)",
+            ('即将上线：物料仓库 随时随地存取数据库中的物品', '', '内容222', 'LockoctThings')
             )
-cur.execute("INSERT INTO introduce (title, content, link) VALUES (?, ?, ?)",
-            ('灵动特色反作弊 宁杀一千不放一个 宁枉勿纵', '内容111', 'AntiCheat')
+cur.execute("INSERT INTO introduce (title, button, content, link) VALUES (?, ?, ?, ?)",
+            ('灵动特色反作弊 宁杀一千不放一个 宁枉勿纵', '', '内容111', 'AntiCheat')
             )
-cur.execute("INSERT INTO introduce (title, content, link) VALUES (?, ?, ?)",
-            ('灵动摄影画廊 感受灵动MC的美丽风景与派对的热闹氛围', '内容222', 'Gallery')
+cur.execute("INSERT INTO introduce (title, button, content, link) VALUES (?, ?, ?, ?)",
+            ('灵动摄影画廊 感受灵动MC的美丽风景与派对的热闹氛围', '', '内容222', 'Gallery')
             )
 conn.commit()
 conn.close()
